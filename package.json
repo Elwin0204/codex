@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest ./test",
+    "test:co": "jest ./test --coverage",
     "docs": "jsdoc --configure jsdoc.config.json",
     "build": "rollup -c"
   },

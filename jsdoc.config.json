@@ -5,6 +5,9 @@
       "README.md",
       "./src"
     ],
+    "exclude": [
+      "./src/internal"
+    ],
     "includePattern": ".js$",
     "excludePattern": "(node_modules/|docs)"
   },

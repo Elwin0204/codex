@@ -1,0 +1,1 @@
+"use strict";const typeOf=function(e,t){var c=typeof e;return"object"!==c?t?c.charAt(0).toUpperCase()+c.slice(1,c.length)===t:c.charAt(0).toUpperCase()+c.slice(1,c.length):t?Object.prototype.toString.call(e).replace(/^\[object (\S+)]$/,"$1")===t:Object.prototype.toString.call(e).replace(/^\[object (\S+)]$/,"$1")},codex={typeOf:typeOf};module.exports=codex;
