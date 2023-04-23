@@ -2,20 +2,25 @@ import _typeOf from "./internal/_typeOf";
 
 /**
  * @description
- * <span style='color:#ff4d4f;font-size:18px;font-weight:bold;'>检查某个值的数据类型</span>
- * |输入值|输出
+ * <span style='color:#ff4d4f;font-size:18px;font-weight:bold;'>返回value的数据类型，如果参数胡type传入值，则检查value是否为type类型</span>
+ * |输入值|输出值
  * |---|---|
  * |123|Number
- * |'abcdef'|String
+ * |'abc'|String
  * |true|Bollean
- * |[1, 2, 3, 4]|Array
- * |{name:'Elwin', age:30}|Object
- * |console.log('this is function')|Function
  * |undefined|Undefined
  * |null|Null
+ * |Symbol('Elwin')|Symbol
+ * |[1, 2, 3]|Array
+ * |{name:'Elwin'}|Object
+ * |function () {}|Function
  * |new Date()|Date
  * |/^[a-zA-Z]{5,20}$/|RegExp
  * |new Error()|Error
+ * |new Map()|Map
+ * |new Set()|Set
+ * |new WeakMap()|WeakMap
+ * |new WeakSet()|WeakSet
  * @function typeOf
  * @param {*} value - 输入值
  * @param {String} [type] - 需要核对的数据类型，不传参则返回该数据的类型

@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>typeOf.js - Documentation</title>
+    <title>indexOf.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -32,7 +32,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">typeOf.js</h1>
+    <h1 class="page-title">indexOf.js</h1>
     
 
     
@@ -42,37 +42,23 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import _typeOf from "./internal/_typeOf";
-
+            <pre class="prettyprint source linenums"><code>import _indexOf from "./internal/_indexOf";
 /**
  * @description
- * &lt;span style='color:#ff4d4f;font-size:18px;font-weight:bold;'>返回value的数据类型，如果参数胡type传入值，则检查value是否为type类型&lt;/span>
+ * &lt;span style='color:#ff4d4f;font-size:18px;font-weight:bold;'>返回 value 在该 array 中的索引值, 如果 value 不存在 array 中就返回-1。使用原生的 indexOf 函数，除非它失效。如果您正在使用一个大数组，你知道数组已经排序，传递 true 给 isSorted 将更快的用二进制搜索..,或者，传递一个数字作为第三个参数，为了在给定的索引的数组中寻找第一个匹配值。&lt;/span>
  * |输入值|输出值
  * |---|---|
- * |123|Number
- * |'abc'|String
- * |true|Bollean
- * |undefined|Undefined
- * |null|Null
- * |Symbol('Elwin')|Symbol
- * |[1, 2, 3]|Array
- * |{name:'Elwin'}|Object
- * |function () {}|Function
- * |new Date()|Date
- * |/^[a-zA-Z]{5,20}$/|RegExp
- * |new Error()|Error
- * |new Map()|Map
- * |new Set()|Set
- * |new WeakMap()|WeakMap
- * |new WeakSet()|WeakSet
- * @function typeOf
- * @param {*} value - 输入值
- * @param {String} [type] - 需要核对的数据类型，不传参则返回该数据的类型
- * @return {Boolean|String} - 返回首字母大写的数据类型（ex：Number）或者布尔值
+ * |[1, 2, 3],2|1
+ * @function indexOf
+ * @param {Array} array - 在哪里查找
+ * @param {*} value - 需要查找的值
+ * @param {Number} idx - 查找的起始索引值
+ * @return {Number} - 返回匹配的第一个索引值
  * @version 1.0.0
  */
-const typeOf = _typeOf;
-export default typeOf;</code></pre>
+const indexOf = _indexOf;
+
+export default indexOf;</code></pre>
         </article>
     </section>
 

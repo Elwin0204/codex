@@ -1,17 +1,12 @@
-function _typeOf(value, type) {
-  const t = typeof value;
+import { ObjProto } from './_const';
+function _typeOf(target, type) {
+  const t = typeof target;
   if (t !== 'object') {
-    if (type) {
-      return t.charAt(0).toUpperCase() + t.slice(1, t.length) === type;
-    } else {
-      return t.charAt(0).toUpperCase() + t.slice(1, t.length);
-    }
+    const t1 = t.charAt(0).toUpperCase() + t.slice(1, t.length);
+    return type ? t1 === type : t1;
   } else {
-    if (type) {
-      return Object.prototype.toString.call(value).replace(/^\[object (\S+)]$/, '$1') === type;
-    } else {
-      return Object.prototype.toString.call(value).replace(/^\[object (\S+)]$/, '$1')
-    }
+    const t2 = ObjProto.toString.call(target).replace(/^\[object (\S+)]$/, '$1');
+    return type ? t2 === type : t2;
   }
 }
 
