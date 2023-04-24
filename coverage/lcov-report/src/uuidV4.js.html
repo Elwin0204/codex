@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/typeOf.js</title>
+    <title>Code coverage report for src/uuidV4.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> typeOf.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> uuidV4.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -77,40 +77,7 @@
 <a name='L12'></a><a href='#L12'>12</a>
 <a name='L13'></a><a href='#L13'>13</a>
 <a name='L14'></a><a href='#L14'>14</a>
-<a name='L15'></a><a href='#L15'>15</a>
-<a name='L16'></a><a href='#L16'>16</a>
-<a name='L17'></a><a href='#L17'>17</a>
-<a name='L18'></a><a href='#L18'>18</a>
-<a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L15'></a><a href='#L15'>15</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -123,37 +90,22 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import _typeOf from "./internal/_typeOf";
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import _uuidV4 from "./internal/_uuidV4";
 &nbsp;
 /**
  * @description
- * &lt;span style='color:#ff4d4f;font-size:18px;font-weight:bold;'&gt;返回value的数据类型，如果参数胡type传入值，则检查value是否为type类型&lt;/span&gt;
+ * &lt;span style='color:#ff4d4f;font-size:18px;font-weight:bold;'&gt;返回UUID V4版本的字符串(x为[0-9a-f], M为[1-5]，N为[8|9|a|b])&lt;/span&gt;
  * |输入值|输出值
  * |---|---|
- * |123|Number
- * |'abc'|String
- * |true|Bollean
- * |undefined|Undefined
- * |null|Null
- * |Symbol('Elwin')|Symbol
- * |[1, 2, 3]|Array
- * |{name:'Elwin'}|Object
- * |function () {}|Function
- * |new Date()|Date
- * |/^[a-zA-Z]{5,20}$/|RegExp
- * |new Error()|Error
- * |new Map()|Map
- * |new Set()|Set
- * |new WeakMap()|WeakMap
- * |new WeakSet()|WeakSet
- * @function typeOf
- * @param {*} value - 输入值
- * @param {String} [type] - 需要核对的数据类型，不传参则返回该数据的类型
- * @return {Boolean|String} - 返回首字母大写的数据类型（ex：Number）或者布尔值
+ * |*|xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx
+ * @function uuidV4
+ * @return {String} - 返回UUID V4版本的字符串
  * @version 1.0.0
  */
-const typeOf = _typeOf;
-export default typeOf;</pre></td></tr></table></pre>
+const uuidV4 = _uuidV4;
+&nbsp;
+export default uuidV4;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/typeOf.js</title>
+    <title>Code coverage report for src/internal/_createIdxFinder.js</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../prettify.css" />
-    <link rel="stylesheet" href="../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../sort-arrow-sprite.png);
+            background-image: url(../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> typeOf.js</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/internal</a> _createIdxFinder.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">58.82% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>10/17</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">40% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>10/25</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">53.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>8/15</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -91,69 +91,63 @@
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import _typeOf from "./internal/_typeOf";
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { slice } from "./_const";
+import _isNaN from "./_isNaN";
+import _len from "./_len";
 &nbsp;
-/**
- * @description
- * &lt;span style='color:#ff4d4f;font-size:18px;font-weight:bold;'&gt;返回value的数据类型，如果参数胡type传入值，则检查value是否为type类型&lt;/span&gt;
- * |输入值|输出值
- * |---|---|
- * |123|Number
- * |'abc'|String
- * |true|Bollean
- * |undefined|Undefined
- * |null|Null
- * |Symbol('Elwin')|Symbol
- * |[1, 2, 3]|Array
- * |{name:'Elwin'}|Object
- * |function () {}|Function
- * |new Date()|Date
- * |/^[a-zA-Z]{5,20}$/|RegExp
- * |new Error()|Error
- * |new Map()|Map
- * |new Set()|Set
- * |new WeakMap()|WeakMap
- * |new WeakSet()|WeakSet
- * @function typeOf
- * @param {*} value - 输入值
- * @param {String} [type] - 需要核对的数据类型，不传参则返回该数据的类型
- * @return {Boolean|String} - 返回首字母大写的数据类型（ex：Number）或者布尔值
- * @version 1.0.0
- */
-const typeOf = _typeOf;
-export default typeOf;</pre></td></tr></table></pre>
+function _createIdxFinder (dir, predicateFind, sortedIdx) {
+  return function (array, item, idx) {
+    let i = 0, len = _len(array);
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof idx == 'number') {
+<span class="cstat-no" title="statement not covered" >      if (dir &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >        i = idx &gt;= 0 ? idx : Math.max(idx + len, i);</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >        len = idx &gt;= 0 ? Math.min(idx + 1, len) : idx + len + 1;</span>
+      } 
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if (sortedIdx &amp;&amp; idx &amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >len)</span> {
+<span class="cstat-no" title="statement not covered" >      idx = sortedIdx(array, item);</span>
+<span class="cstat-no" title="statement not covered" >      return array[idx] === item ? idx : -1;</span>
+    }
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (item !== item) {
+<span class="cstat-no" title="statement not covered" >      idx = predicateFind(slice.call(array, i, len), _isNaN);</span>
+<span class="cstat-no" title="statement not covered" >      return idx &gt;= 0 ? idx + i : -1;</span>
+    }
+    for (idx = dir &gt; 0 ? i : <span class="branch-1 cbranch-no" title="branch not covered" >len - 1;</span> idx &gt;= 0 &amp;&amp; idx &lt; len; idx += dir) {
+      if (array[idx] === item) return idx;
+    }
+    return -1;
+  };
+}
+&nbsp;
+export default _createIdxFinder;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
@@ -162,14 +156,14 @@ export default typeOf;</pre></td></tr></table></pre>
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
                 at 2023-04-24T15:06:04.280Z
             </div>
-        <script src="../prettify.js"></script>
+        <script src="../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../sorter.js"></script>
-        <script src="../block-navigation.js"></script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
     </body>
 </html>
     
