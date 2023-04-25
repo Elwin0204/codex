@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>clone.js - Documentation</title>
+    <title>cloneDeep.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -32,7 +32,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">clone.js</h1>
+    <h1 class="page-title">cloneDeep.js</h1>
     
 
     
@@ -42,22 +42,24 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import _clone from "./internal/_clone";
+            <pre class="prettyprint source linenums"><code>import _cloneDeep from "./internal/_cloneDeep";
 
 /**
  * @description
- * &lt;span style='color:#ff4d4f;font-size:18px;font-weight:bold;'>创建 一个浅复制（浅拷贝）的克隆 object。任何嵌套的对象或数组都通过引用拷贝，不会复制。&lt;/span>
+ * &lt;span style='color:#ff4d4f;font-size:18px;font-weight:bold;'>创建 一个深复制（深拷贝）的克隆 object。&lt;/span>
  * |输入值|输出值
  * |---|---|
  * |*|*
- * @function clone
- * @param {*} target - 输入值
- * @return {*} - target的一个浅复制
+ * @function cloneDeep
+ * @param {*} target - 需要拷贝的值
+ * @param {*} _visited - 循环引用初始化
+ * @param {*} _copiesVisited - 循环引用初始化副本
+ * @return {*} - target的一个深复制
  * @version 1.0.0
  */
-const clone = _clone;
+const cloneDeep = _cloneDeep;
 
-export default clone;</code></pre>
+export default cloneDeep;</code></pre>
         </article>
     </section>
 

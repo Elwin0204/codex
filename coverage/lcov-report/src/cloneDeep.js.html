@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/uuidV4.js</title>
+    <title>Code coverage report for src/cloneDeep.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> uuidV4.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> cloneDeep.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -77,7 +77,13 @@
 <a name='L12'></a><a href='#L12'>12</a>
 <a name='L13'></a><a href='#L13'>13</a>
 <a name='L14'></a><a href='#L14'>14</a>
-<a name='L15'></a><a href='#L15'>15</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -91,21 +97,24 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import _uuidV4 from "./internal/_uuidV4";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import _cloneDeep from "./internal/_cloneDeep";
 &nbsp;
 /**
  * @description
- * &lt;span style='color:#ff4d4f;font-size:18px;font-weight:bold;'&gt;返回UUID V4版本的字符串(x为[0-9a-f], M为[1-5]，N为[8|9|a|b])&lt;/span&gt;
+ * &lt;span style='color:#ff4d4f;font-size:18px;font-weight:bold;'&gt;创建 一个深复制（深拷贝）的克隆 object。&lt;/span&gt;
  * |输入值|输出值
  * |---|---|
- * |*|xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx
- * @function uuidV4
- * @return {String} - 返回UUID V4版本的字符串
+ * |*|*
+ * @function cloneDeep
+ * @param {*} target - 需要拷贝的值
+ * @param {*} _visited - 循环引用初始化
+ * @param {*} _copiesVisited - 循环引用初始化副本
+ * @return {*} - target的一个深复制
  * @version 1.0.0
  */
-const uuidV4 = _uuidV4;
+const cloneDeep = _cloneDeep;
 &nbsp;
-export default uuidV4;</pre></td></tr></table></pre>
+export default cloneDeep;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

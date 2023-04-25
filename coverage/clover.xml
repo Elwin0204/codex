@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1682348764391" clover="3.2.0">
-  <project timestamp="1682348764391" name="All files">
-    <metrics statements="98" coveredstatements="67" conditionals="80" coveredconditionals="31" methods="17" coveredmethods="12" elements="195" coveredelements="110" complexity="0" loc="98" ncloc="98" packages="2" files="22" classes="22"/>
+<coverage generated="1682434511397" clover="3.2.0">
+  <project timestamp="1682434511397" name="All files">
+    <metrics statements="138" coveredstatements="99" conditionals="106" coveredconditionals="49" methods="20" coveredmethods="13" elements="264" coveredelements="161" complexity="0" loc="138" ncloc="138" packages="2" files="24" classes="24"/>
     <package name="src">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="clone.js" path="D:\projects\jsProject\codex\src\clone.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="14" count="1" type="stmt"/>
+      </file>
+      <file name="cloneDeep.js" path="D:\projects\jsProject\codex\src\cloneDeep.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="16" count="1" type="stmt"/>
       </file>
       <file name="indexOf.js" path="D:\projects\jsProject\codex\src\indexOf.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -22,7 +26,7 @@
       </file>
     </package>
     <package name="src.internal">
-      <metrics statements="94" coveredstatements="63" conditionals="80" coveredconditionals="31" methods="17" coveredmethods="12"/>
+      <metrics statements="133" coveredstatements="94" conditionals="106" coveredconditionals="49" methods="20" coveredmethods="13"/>
       <file name="_allKeys.js" path="D:\projects\jsProject\codex\src\internal\_allKeys.js">
         <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="6" count="2" type="cond" truecount="1" falsecount="1"/>
@@ -35,6 +39,48 @@
         <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="5" count="2" type="cond" truecount="1" falsecount="1"/>
         <line num="6" count="2" type="cond" truecount="1" falsecount="1"/>
+      </file>
+      <file name="_cloneDeep.js" path="D:\projects\jsProject\codex\src\internal\_cloneDeep.js">
+        <metrics statements="39" coveredstatements="31" conditionals="26" coveredconditionals="18" methods="3" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="19" count="11" type="cond" truecount="4" falsecount="0"/>
+        <line num="20" count="7" type="stmt"/>
+        <line num="24" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="30" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="34" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="38" count="3" type="cond" truecount="2" falsecount="2"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="44" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="50" count="3" type="stmt"/>
+        <line num="51" count="3" type="stmt"/>
+        <line num="53" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="59" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="69" count="2" type="stmt"/>
+        <line num="71" count="1" type="stmt"/>
+        <line num="77" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="78" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="81" count="2" type="stmt"/>
+        <line num="84" count="2" type="stmt"/>
+        <line num="85" count="2" type="stmt"/>
+        <line num="87" count="2" type="stmt"/>
+        <line num="90" count="8" type="stmt"/>
+        <line num="92" count="2" type="stmt"/>
       </file>
       <file name="_collectNonEnumProps.js" path="D:\projects\jsProject\codex\src\internal\_collectNonEnumProps.js">
         <metrics statements="9" coveredstatements="0" conditionals="12" coveredconditionals="0" methods="1" coveredmethods="0"/>
