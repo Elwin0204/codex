@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>cloneDeep.js - Documentation</title>
+    <title>heapSort.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -32,7 +32,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">cloneDeep.js</h1>
+    <h1 class="page-title">heapSort.js</h1>
     
 
     
@@ -42,24 +42,22 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import _cloneDeep from "./internal/_cloneDeep";
+            <pre class="prettyprint source linenums"><code>import _heapSort from './internal/_heapSort';
 
 /**
  * @description
- * &lt;span style='color:#ff4d4f;font-size:18px;font-weight:bold;'>创建 一个深复制（深拷贝）的克隆 object。&lt;/span>
+ * &lt;span style='color:#ff4d4f;font-size:18px;font-weight:bold;'>堆排序。&lt;/span>
  * |输入值|输出值
  * |---|---|
  * |*|*
- * @function cloneDeep
- * @param {*} target - 需要拷贝的值
- * @param {*} _visited - 循环引用初始化
- * @param {*} _copiesVisited - 循环引用初始化副本
- * @return {*} - target的一个深复制
+ * @function heapSort
+ * @param {*} arr - 数组
+ * @return {*} - 返回排好序的数组
  * @version 1.0.0
  */
-const cloneDeep = _cloneDeep;
+const heapSort = _heapSort;
 
-export default cloneDeep;</code></pre>
+export default heapSort;</code></pre>
         </article>
     </section>
 
