@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>uuidV4.js - Documentation</title>
+    <title>bucketSort.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -32,7 +32,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">uuidV4.js</h1>
+    <h1 class="page-title">bucketSort.js</h1>
     
 
     
@@ -42,21 +42,22 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import _uuidV4 from "./internal/_uuidV4";
+            <pre class="prettyprint source linenums"><code>import _bucketSort from './internal/_bucketSort';
 
 /**
  * @description
- * &lt;span style='color:#ff4d4f;font-size:18px;font-weight:bold;'>返回UUID V4版本的字符串(x为[0-9a-f], M为[1-5]，N为[8|9|a|b])&lt;/span>
+ * &lt;span style='color:#ff4d4f;font-size:18px;font-weight:bold;'>桶排序。&lt;/span>
  * |输入值|输出值
  * |---|---|
- * |*|xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx
- * @function uuidV4
- * @return {String} - 返回UUID V4版本的字符串
+ * |*|*
+ * @function bucketSort
+ * @param {*} arr - 数组
+ * @return {*} - 返回排好序的数组
  * @version 1.0.0
  */
-const uuidV4 = _uuidV4;
+const bucketSort = _bucketSort;
 
-export default uuidV4;</code></pre>
+export default bucketSort;</code></pre>
         </article>
     </section>
 

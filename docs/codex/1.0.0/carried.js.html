@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>uuidV4.js - Documentation</title>
+    <title>carried.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -32,7 +32,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">uuidV4.js</h1>
+    <h1 class="page-title">carried.js</h1>
     
 
     
@@ -42,21 +42,21 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import _uuidV4 from "./internal/_uuidV4";
-
+            <pre class="prettyprint source linenums"><code>import _carried from "./internal/_carried";
 /**
  * @description
- * &lt;span style='color:#ff4d4f;font-size:18px;font-weight:bold;'>返回UUID V4版本的字符串(x为[0-9a-f], M为[1-5]，N为[8|9|a|b])&lt;/span>
+ * &lt;span style='color:#ff4d4f;font-size:18px;font-weight:bold;'>传入一个函数fn, 当参数个数fn的参数个数时，返回函数， 当参数等于fn的参数个数时，执行fn。&lt;/span>
  * |输入值|输出值
  * |---|---|
- * |*|xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx
- * @function uuidV4
- * @return {String} - 返回UUID V4版本的字符串
+ * |fn|any
+ * @function carried
+ * @param {Function} fn - 固定参数个数的函数
+ * @return {any} - 任何值
  * @version 1.0.0
  */
-const uuidV4 = _uuidV4;
+const carried = _carried;
 
-export default uuidV4;</code></pre>
+export default carried;</code></pre>
         </article>
     </section>
 
