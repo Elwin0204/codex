@@ -91,12 +91,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import _len from "./_len";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import _getLength from "./_getLength";
 &nbsp;
 function _createPredicateIdxFinder (dir) {
   return <span class="fstat-no" title="function not covered" >fu</span>nction (array, predicate, ctx) {
 <span class="cstat-no" title="statement not covered" >    predicate = _cb(predicate, ctx);</span>
-    const len = <span class="cstat-no" title="statement not covered" >_len(array);</span>
+    const len = <span class="cstat-no" title="statement not covered" >_getLength(array);</span>
     const idx = <span class="cstat-no" title="statement not covered" >dir &gt; 0 ? 0 : len - 1;</span>
 <span class="cstat-no" title="statement not covered" >    for (; idx &gt;= 0 &amp;&amp; idx &lt; len; idx += dir) {</span>
 <span class="cstat-no" title="statement not covered" >      if (predicate(array[idx], idx, array)) <span class="cstat-no" title="statement not covered" >return idx;</span></span>

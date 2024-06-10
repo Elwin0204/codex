@@ -179,7 +179,7 @@
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="cond" truecount="3" falsecount="0"/>
       </file>
-      <file name="_len.js" path="D:\projects\jsProject\codex\src\internal\_len.js">
+      <file name="_getLength.js" path="D:\projects\jsProject\codex\src\internal\_getLength.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
       </file>

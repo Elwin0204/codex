@@ -1,10 +1,10 @@
 import { slice } from "./_const";
 import _isNaN from "./_isNaN";
-import _len from "./_len";
+import _getLength from "./_getLength";
 
 function _createIdxFinder (dir, predicateFind, sortedIdx) {
   return function (array, item, idx) {
-    let i = 0, len = _len(array);
+    let i = 0, len = _getLength(array);
     if (typeof idx == 'number') {
       if (dir > 0) {
         i = idx >= 0 ? idx : Math.max(idx + len, i);

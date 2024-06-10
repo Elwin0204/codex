@@ -89,12 +89,12 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import _len from "./_len";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import _getLength from "./_getLength";
 &nbsp;
 function <span class="fstat-no" title="function not covered" >_sortedIdx </span>(array, target, iteratee, ctx) {
 <span class="cstat-no" title="statement not covered" >  iteratee = _cb(iteratee, ctx, 1);</span>
   const value = <span class="cstat-no" title="statement not covered" >iteratee(target);</span>
-  let low = <span class="cstat-no" title="statement not covered" >0,</span> high = <span class="cstat-no" title="statement not covered" >_len(array);</span>
+  let low = <span class="cstat-no" title="statement not covered" >0,</span> high = <span class="cstat-no" title="statement not covered" >_getLength(array);</span>
 <span class="cstat-no" title="statement not covered" >  while (low &lt; high) {</span>
     const mid = <span class="cstat-no" title="statement not covered" >Math.floor((low + high) / 2);</span>
 <span class="cstat-no" title="statement not covered" >    if (iteratee(array[mid] &lt; value)) <span class="cstat-no" title="statement not covered" >low = mid + 1; </span>else <span class="cstat-no" title="statement not covered" >high = mid;</span></span>
