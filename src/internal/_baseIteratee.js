@@ -1,6 +1,7 @@
 import _identity from './_identity';
 import _typeOf from "./_typeOf";
 import _optimizeCb from './_optimizeCb';
+import _property from './_property';
 
 function _baseIteratee (target, ctx, argCount) {
   if (target == null) return _identity;
