@@ -27,7 +27,7 @@
 
 <nav >
     
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="limitFn.html">limitFn</a></li><li><a href="Queue.html">Queue</a></li></ul><h3>Global</h3><ul><li><a href="global.html#bubbleSort">bubbleSort</a></li><li><a href="global.html#bubbleSortPlus">bubbleSortPlus</a></li><li><a href="global.html#bucketSort">bucketSort</a></li><li><a href="global.html#carried">carried</a></li><li><a href="global.html#clone">clone</a></li><li><a href="global.html#cloneDeep">cloneDeep</a></li><li><a href="global.html#countingSort">countingSort</a></li><li><a href="global.html#debounce">debounce</a></li><li><a href="global.html#each">each</a></li><li><a href="global.html#heapSort">heapSort</a></li><li><a href="global.html#indexOf">indexOf</a></li><li><a href="global.html#insertionSort">insertionSort</a></li><li><a href="global.html#map">map</a></li><li><a href="global.html#mergeSort">mergeSort</a></li><li><a href="global.html#quickSort">quickSort</a></li><li><a href="global.html#selectionSort">selectionSort</a></li><li><a href="global.html#shellSort">shellSort</a></li><li><a href="global.html#throttle">throttle</a></li><li><a href="global.html#typeOf">typeOf</a></li><li><a href="global.html#uuidV4">uuidV4</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="limitFn.html">limitFn</a></li><li><a href="Queue.html">Queue</a></li></ul><h3>Global</h3><ul><li><a href="global.html#bubbleSort">bubbleSort</a></li><li><a href="global.html#bubbleSortPlus">bubbleSortPlus</a></li><li><a href="global.html#bucketSort">bucketSort</a></li><li><a href="global.html#carried">carried</a></li><li><a href="global.html#clone">clone</a></li><li><a href="global.html#cloneDeep">cloneDeep</a></li><li><a href="global.html#countingSort">countingSort</a></li><li><a href="global.html#debounce">debounce</a></li><li><a href="global.html#each">each</a></li><li><a href="global.html#heapSort">heapSort</a></li><li><a href="global.html#indexOf">indexOf</a></li><li><a href="global.html#insertionSort">insertionSort</a></li><li><a href="global.html#map">map</a></li><li><a href="global.html#mergeSort">mergeSort</a></li><li><a href="global.html#quickSort">quickSort</a></li><li><a href="global.html#reduce">reduce</a></li><li><a href="global.html#selectionSort">selectionSort</a></li><li><a href="global.html#shellSort">shellSort</a></li><li><a href="global.html#throttle">throttle</a></li><li><a href="global.html#typeOf">typeOf</a></li><li><a href="global.html#uuidV4">uuidV4</a></li></ul>
 </nav>
 
 <div id="main">
@@ -2930,6 +2930,233 @@
 
     
 
+    <h4 class="name" id="reduce"><span class="type-signature"></span>reduce<span class="signature">(list, iterator, memo)</span><span class="type-signature"> &rarr; {*}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="reduce.js.html">reduce.js</a>, <a href="reduce.js.html#line3">line 3</a>
+    </li></ul></dd>
+    
+
+    
+    <dt class="tag-version">Version:</dt>
+    <dd class="tag-version"><ul class="dummy"><li>1.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p><span style='color:#ff4d4f;font-size:18px;font-weight:bold;'>reduce函数将一串值归结为一个值。memo是归约的初始状态，迭代器应返回它的每个后续步骤。迭代器传递了四个参数：memo，迭代的值和索引（或键），对整个列表的引用。
+如果reduce初始调用中没有传递memo，则不会在列表的第一个元素上调用迭代器。而是在对列表中的下一个元素调用迭代器时将第一个元素作为memo传递。</span></p>
+<table>
+<thead>
+<tr>
+<th>输入值</th>
+<th>输出值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*</td>
+<td>*</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>list</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+|
+
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>数组或者对象</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>iterator</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>迭代器函数</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>memo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>归约的初始状态</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>归约后的结果</li>
+</ul>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">*</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
     <h4 class="name" id="selectionSort"><span class="type-signature"></span>selectionSort<span class="signature">(arr)</span><span class="type-signature"> &rarr; {*}</span></h4>
 
     
@@ -3934,7 +4161,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Tue Jun 11 2024 22:00:56 GMT+0800 (中国标准时间) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Wed Jun 12 2024 21:59:58 GMT+0800 (中国标准时间) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>
